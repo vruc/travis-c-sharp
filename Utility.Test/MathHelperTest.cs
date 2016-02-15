@@ -13,6 +13,8 @@ namespace Utility.Test
     {
         [Test]
         [TestCase(10,20)]
+        [TestCase(100, 200)]
+        [TestCase(1000, 2000)]
         public void Add_Test_1(int x, int y)
         {
             Assert.AreEqual(MathHelper.Add(x, y), x + y);
