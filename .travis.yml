@@ -1,0 +1,4 @@
+language: csharp
+script:
+  - nuget restore UtiliyDemoProject.sln
+  - xbuild UtiliyDemoProject.sln
