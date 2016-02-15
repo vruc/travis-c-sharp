@@ -1,4 +1,6 @@
 language: csharp
 script:
+  - sudo apt-get install nunit-console
   - nuget restore UtiliyDemoProject.sln
   - xbuild UtiliyDemoProject.sln
+  - nunit-console Utility.Test/bin/Debug/Utility.Test.dll
